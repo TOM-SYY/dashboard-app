@@ -1,9 +1,9 @@
 Flask
 Flask-SocketIO
-eventlet
-gunicorn
 bcrypt
-pandas
-matplotlib
-fpdf
 requests
+matplotlib
+pandas
+fpdf
+python-socketio
+eventlet
