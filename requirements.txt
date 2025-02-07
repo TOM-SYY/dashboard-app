@@ -1,0 +1,8 @@
+Flask
+bcrypt
+requests
+matplotlib
+pandas
+fpdf
+flask-socketio
+python-socketio

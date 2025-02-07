@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: dashboard-app
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python dashboard_page.py"
+    plan: free
