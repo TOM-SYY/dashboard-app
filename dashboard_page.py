@@ -192,10 +192,6 @@ def create_task():
         return redirect(url_for('dashboard'))
 
     return render_template('create_task.html')
-   
-    @app.route('/')
-def home():
-    return redirect(url_for('login'))
 
 if __name__ == '__main__':
     init_db()
