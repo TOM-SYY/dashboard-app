@@ -1,8 +1,10 @@
-Flask
-bcrypt
-requests
-matplotlib
-pandas
-fpdf
-flask-socketio
 python-socketio
+Flask
+Flask-SocketIO
+eventlet
+gunicorn
+bcrypt
+pandas
+matplotlib
+fpdf
+requests
