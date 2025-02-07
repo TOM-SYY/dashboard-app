@@ -52,7 +52,7 @@ def send_line_message_to_user(user_id, message):
     return response.status_code
 
 # สร้างฐานข้อมูล SQLite
-DATABASE = 'data.db'
+DATABASE = '/tmp/data.db'
 
 def init_db():
     with sqlite3.connect(DATABASE) as conn:
