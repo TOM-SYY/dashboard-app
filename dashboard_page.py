@@ -202,5 +202,5 @@ if __name__ == '__main__':
   
     import os
 port = int(os.environ.get('PORT', 5000))  # ใช้ PORT จาก Render ถ้าไม่มีจะใช้ 5000
-socketio.run(app, host='0.0.0.0', port=prot)
+socketio.run(app, host='0.0.0.0', port=10000)
 
