@@ -1,4 +1,3 @@
-python-socketio
 Flask
 Flask-SocketIO
 eventlet
