@@ -199,6 +199,5 @@ if __name__ == '__main__':
 
 if __name__ == '__main__':
     init_db()
-    port = int(os.environ.get("PORT", 10000))  # ดึงค่า PORT จาก Render หรือใช้ 10000 เป็นค่าเริ่มต้น
-    socketio.run(app, host='0.0.0.0', port=port, allow_unsafe_werkzeug=True)
+    socketio.run(app, host='0.0.0.0', port=10000, allow_unsafe_werkzeug=True)
 
