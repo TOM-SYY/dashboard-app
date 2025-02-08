@@ -52,7 +52,7 @@ def send_line_message_to_user(user_id, message):
     return response.status_code
 
 # สร้างฐานข้อมูล SQLite
-DATABASE = '/tmp/data.db'
+DATABASE = 'data.db'
 
 def init_db():
     with sqlite3.connect(DATABASE) as conn:
@@ -195,13 +195,4 @@ def create_task():
 
 if __name__ == '__main__':
     init_db()
-    import os
-
-if __name__ == '__main__':
-    init_db()
-  
-    import os
-port = int(os.environ.get('PORT', 5000))  # ใช้ PORT จาก Render
-socketio.run(app, host='0.0.0.0', port=port, allow_unsafe_werkzeug=True)
-
-
+    socketio.run(app, debug=True)

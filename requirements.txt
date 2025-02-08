@@ -1,9 +1,0 @@
-Flask
-Flask-SocketIO
-bcrypt
-requests
-matplotlib
-pandas
-fpdf
-python-socketio
-eventlet
