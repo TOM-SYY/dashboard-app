@@ -192,7 +192,10 @@ def create_task():
         return redirect(url_for('dashboard'))
 
     return render_template('create_task.html')
-
+    
+@app.route('/')
+def home():
+    return redirect(url_for('login'))
 if __name__ == '__main__':
     init_db()
-    socketio.run(app, debug=True)
+    socketio.run(app, host='0.0.0.0', port=10000, allow_unsafe_werkzeug=True)
