@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Task</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Create New Task</h2>
+    <form method="POST" action="/create_task">
+        <input type="text" name="title" placeholder="Title" required><br>
+        <textarea name="description" placeholder="Description"></textarea><br>
+        <input type="text" name="assigned_to" placeholder="Assign to"><br>
+        <button type="submit">Create Task</button>
+    </form>
+    <a href="/dashboard">Back to Dashboard</a>
+</body>
+</html>
