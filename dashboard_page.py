@@ -198,5 +198,8 @@ def home():
     return redirect(url_for('login'))
 if __name__ == '__main__':
     init_db()
-socketio.run(app, host='0.0.0.0', port=10000, allow_unsafe_werkzeug=True)
+import os
+port = int(os.environ.get('PORT', 5000))  # ใช้ PORT จาก Render ถ้าไม่มีจะใช้ 5000
+socketio.run(app, host='0.0.0.0', port=10000)
+
 
